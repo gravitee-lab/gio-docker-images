@@ -17,7 +17,7 @@ ADD http://dl.bintray.com/groovy/maven/apache-groovy-binary-${GROOVY_VERSION}.zi
 RUN unzip -d /opt/ /tmp/apache-groovy-binary-${GROOVY_VERSION}.zip \
    && rm /tmp/apache-groovy-binary-${GROOVY_VERSION}.zip
 
-RUN wget --no-cache raw.githubusercontent.com/gravitee-io/jenkins-scripts/master/src/main/groovy/githubChangelogGenerator.groovy -P /tmp
+RUN wget --no-cache raw.githubusercontent.com/gravitee-io/jenkins-scripts/ci2/src/main/groovy/githubChangelogGenerator.groovy -P /tmp
 
 RUN mkdir /data
 VOLUME /data
